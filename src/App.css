@@ -1,2 +1,103 @@
 .App {
+  background-color: #24232b;
+  padding: 20px;
+  margin: 20px;
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a8b8b;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.6;
+}
+
+.copy-btn {
+  font-size: 12px;
+}
+
+.character-length {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.character-length p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.strength-details {
+  position: relative;
+  top: 20px;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.checkboxes label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  /* font-size: small; */
+  position: relative;
+  top: 20px;
+}
+
+.checkboxes input {
+  cursor: pointer;
+}
+
+.btn-generate {
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.Weak {
+  color: red;
+  font-weight: 900;
+}
+
+.Medium {
+  color: yellow;
+  font-weight: 900;
+}
+
+.Strong {
+  color: green;
+  font-weight: 900;
 }
